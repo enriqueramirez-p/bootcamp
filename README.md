@@ -1,3 +1,3 @@
-# bootcamp
+# academybootcamp
 
-Academy bootcamp 1.1
+Deliverable 1.1
