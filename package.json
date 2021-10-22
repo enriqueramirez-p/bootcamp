@@ -5,10 +5,10 @@
 	"main": "index.js",
 	"private": true,
 	"dependencies": {
+		"dotenv": "^10.0.0",
 		"prettier": "^2.2.1",
 		"testcafe": "^1.12.0"
 	},
-	"devDependencies": {},
 	"scripts": {
 		"test:chrome": "testcafe chrome ./tests",
 		"test:chrome:headless": "testcafe chrome:headless ./tests",

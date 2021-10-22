@@ -1,4 +1,7 @@
 import { Selector } from 'testcafe'
+import FirstPage from '../pom/pages/FirstPage'
+import LoginPage from '../pom/pages/LoginPage'
+import { CREDENTIALS } from '../pom/data/Constants'
 
 // prettier-ignore
 fixture`getting Started with Testcafe`
@@ -20,14 +23,15 @@ fixture`getting Started with Testcafe`
 		//runs after each test
 	})
 
-test('My first solo testcafetest', async t => {
+test('Login to Todoist App with Mail and password', async t => {
 	const email = Selector(`#email`)
 	const password = Selector(`#password`)
 	const submitButton = Selector(`.submit_btn`)
 	const leftMenu = Selector(`#left_menu`)
 
-	await t.typeText(email, 'coca_noki@hotmail.com')
-	await t.typeText(password, 'Noki512@')
-	await t.click(submitButton)
+	await t.typeText(FirstPage.loginButton)
+	await t.typeText(LoginPage.emailInput, CREDENTIALS.MYUSER.USERNAME)
+	await t.typeText(LoginPage.PasswordInput, CREDENTIALS.MYUSER.PASSWORD)
+	await t.click(LoginPage.submitButton)
 	await t.expect(leftMenu.visible).ok
 })
