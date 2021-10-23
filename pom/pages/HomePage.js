@@ -1,9 +1,9 @@
-import { Selector } from 'tescafe'
+import { Selector } from "testcafe";
 
 class HomePage {
-	constructor() {
-		this.leftMenu = Selector(`#left_menu`)
-	}
+  constructor() {
+    this.leftMenu = Selector(`#left_menu`);
+  }
 }
 
-export default new HomePage()
+export default new HomePage;

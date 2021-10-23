@@ -1,26 +1,36 @@
 {
-	"name": "auto",
-	"version": "1.0.0",
-	"description": "Automated Solo Test for testcafe",
-	"main": "index.js",
-	"private": true,
-	"dependencies": {
-		"dotenv": "^10.0.0",
-		"prettier": "^2.2.1",
-		"testcafe": "^1.12.0"
-	},
-	"scripts": {
-		"test:chrome": "testcafe chrome ./tests",
-		"test:chrome:headless": "testcafe chrome:headless ./tests",
-		"test:chrome:mobile": "testcafe chrome:emulation:device=iphone X ./tests",
-		"test:safari": "testcafe safari ./tests",
-		"test:firefox": "testcafe firefox ./tests"
-	},
-	"keywords": [
-		"TestCafe",
-		"Testing",
-		"Automation"
-	],
-	"author": "LERP",
-	"license": "ISC"
+  "name": "auto",
+  "version": "1.0.0",
+  "description": "Automated Solo Test for testcafe",
+  "main": "index.js",
+  "private": true,
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "testcafe": "^1.12.0"
+  },
+  "scripts": {
+    "test:chrome": "testcafe chrome ./tests",
+    "test:chrome:headless": "testcafe chrome:headless ./tests",
+    "test:chrome:mobile": "testcafe chrome:emulation:device=iphone X ./tests",
+    "test:safari": "testcafe safari ./tests",
+    "test:firefox": "testcafe firefox ./tests"
+  },
+  "keywords": [
+    "TestCafe",
+    "Testing",
+    "Automation"
+  ],
+  "author": "LERP",
+  "license": "ISC",
+  "directories": {
+    "test": "tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/enriqueramirez-p/bootcamp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/enriqueramirez-p/bootcamp/issues"
+  },
+  "homepage": "https://github.com/enriqueramirez-p/bootcamp#readme"
 }
