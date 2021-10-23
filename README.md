@@ -12,7 +12,7 @@ Deliverable #1 trying to implement all the best practices that we learn and try 
 
 ## How is the structure of the project? 
 
-|---...
+|...
 |---pom                      Main Page Object Model folder
 |    |---data                Roles and constants 
 |        |---constants 
