@@ -13,15 +13,15 @@ Deliverable #1 trying to implement all the best practices that we learn and try 
 ## How is the structure of the project? 
 
 |---...
-|---pom                     # Main Page Object Model folder
-|    |---data               # Roles and constants 
+|---pom                      Main Page Object Model folder
+|    |---data                Roles and constants 
 |        |---constants 
 |        |---Roles
-|    |---pages              # Pages contained in todoist.com
+|    |---pages               Pages contained in todoist.com
 |        |---FirstPage
 |        |---HomePage
 |        |---LoginPage
-|---tests                    # Test Cases located to execute   
+|---tests                     Test Cases located to execute   
 |---env 
 |---package.json           
 
