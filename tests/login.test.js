@@ -34,14 +34,15 @@ test(" Try to login into todoist with a invalid username", async (t) => {
 
   test(" Try to login into todoist with a blank username and password", async (t) => {
 	await t.click(FirstPage.loginButton)
-    await t.click(`.submit_btn`);
+	await t.click(LoginPage.submitButton);
+    //await t.click(`.submit_btn`);
 	await t.expect(LoginPage.errorMessage.innerText).contains(MESSAGES.ERROR_MESSAGES.INVALID_EMAIL);
   });
 
   test(" Try to login into todoist with a blank password", async (t) => {
 	await t.click(FirstPage.loginButton)
   //  await LoginPage.submitLoginForm(CREDENTIALS.BAD_USER.USERNAME, '' );
-	await t.typeText(`#email`, CREDENTIALS.BAD_USER.USERNAME);
-	await t.click(`.submit_btn`);
+	await t.typeText(LoginPage.emailInput, CREDENTIALS.BAD_USER.USERNAME);
+	await t.click(LoginPage.submitButton);
 	await t.expect(LoginPage.errorMessage.innerText).contains(MESSAGES.ERROR_MESSAGES.INVALID_PASSWORD);
   });
