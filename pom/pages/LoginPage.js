@@ -5,6 +5,9 @@ class LoginPage {
     this.emailInput = Selector(`#email`);
     this.PasswordInput = Selector(`#password`);
     this.submitButton = Selector(`.submit_btn`);
+    this.errorMessage = Selector(".error_msg")
+    //.withText("Log in");
+
   }
 
   async submitLoginForm(username, password) {
